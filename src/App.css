@@ -1,38 +1,426 @@
-.App {
-  text-align: center;
+@import url("./App.css");
+
+/*  Home Page  */
+.home-div {
+  display: flex;
+  /* flex-wrap: wrap; */
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.left {
+  flex: 1;
+  /* padding: 90px; */
+  padding: 90px;
+  color: antiquewhite;
+  background-color: var(--bg-color);
+}
+.name {
+  color: transparent;
+  background-image: linear-gradient(60deg, white, rgb(19, 221, 46));
+  background-clip: text;
+  font-size: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.title {
+  font-size: 30px;
+  /* overflow: hidden; */
+}
+.title-wrapper {
+  height: 100%;
+  overflow: hidden;
+}
+
+.title-item {
+  height: 50px;
+  font-size: 30px;
+  color: #59b256;
+  display: flex;
+
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 8s infinite steps(40, end), blink-caret 1s step-end infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 100%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  20%,
+  100% {
+    border-color: orange;
+  }
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  /* background-color: var(--bg-color); */
+  position: relative;
+  overflow: hidden;
+}
+
+.i-desc {
+  font-size: 20px;
+}
+
+.i-right {
+  flex: 1;
+  /* background-color: blue; */
+  background-color: var(--bg-color);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.i-bg {
+  background-color: #40db3b;
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 29% 100%, 0 43%);
+
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.i-img {
+  /* background-color: rgb(194, 20, 142); */
+
+  width: 70%;
+  height: 80%;
+  object-fit: contain;
+  overflow: hidden;
+  position: absolute;
+}
+
+/*  ABout Page  */
+
+/*  SKills Page  */
+
+.skills {
+  background-color: var(--bg-color);
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.skills h2 {
+  font-size: 2rem;
+  color: antiquewhite;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.s-skills {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  justify-content: center;
+  flex-wrap: wrap;
+
+  /* background-color: red; */
+}
+
+.grid-item {
+  width: 120px;
+  padding: 20px;
+  background-color: #fff;
+  margin: 4px;
+  border-radius: 3px;
+}
+
+.grid-item:hover {
+  background-color: var(--bg-green);
+  color: var(--bg-color);
+}
+.grid-item:hover .s-c {
+  color: var(--bg-color);
+}
+
+.grid-item img {
+  width: 50px;
+}
+
+.s-c {
+  color: rgb(19, 226, 43);
+  font-size: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* Services page  */
+
+.services {
+  width: 100%;
+  background: var(--bg-color);
+  color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.services p {
+  font-size: 18px;
+  margin-top: 70px;
+}
+
+.services h3 {
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+/* Styles for services container */
+.service-main {
+  width: 100%;
+  display: flex;
+  /* background-color: burlywood; */
+  flex-direction: column;
+  /* padding: 10px; */
+  margin-top: 0px;
+  padding-bottom: 40px;
+}
+
+.service-main .row {
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+/* Styles for each card */
+
+.card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: -0.1rem 0.1rem 0.3rem rgb(255, 255, 255);
+  margin: 20px;
+}
+
+.card:hover {
+  /* box-shadow: 0px 0px 5px 5px #e6e6e6; */
+  background-color: var(--bg-green);
+  color: var(--text-white);
+}
+
+.card:hover .icon {
+  color: var(--bg-green);
+  background-color: white;
+  transition: 0.8s ease-in-out;
+  transform: translateY(-50px);
+}
+
+.card:hover .card-body {
+  transition: 0.8s ease;
+  transform: translateY(-30px);
+}
+.icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background-color: var(--bg-green);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-body h3 {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px;
+}
+
+.card-body p {
+  color: black;
+  text-align: center;
+  /* background-color: yellow; */
+  margin-top: 10px;
+  margin-bottom: 5%;
+}
+
+/* Media query for small devices */
+@media (max-width: 768px) {
+  .card {
+    width: 80%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+/* Contact Pages */
+
+.contact {
+  background: var(--bg-color);
+
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.c-line {
+  position: absolute;
+  width: 25px;
+  height: 100%;
+  background-color: var(--bg-green);
+}
+.c-title {
+  font-size: 40px;
+  margin: 10px;
+  color: rgb(24, 173, 24);
+}
+
+.c-title p {
+  color: antiquewhite;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.c-icon {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.c-icon p {
+  color: silver;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+img {
+  width: 30px;
+}
+
+.c-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.c-right {
+  flex: 1;
+  justify-content: center;
+  padding: 50px;
+}
+
+.form {
+  width: 90%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid rgb(24, 173, 24);
+  margin: 10px 0px;
+  padding-left: 10px;
+  font-size: 14px;
+  background-color: rgb(8, 11, 14);
+  color: aquamarine;
+}
+
+.form textarea {
+  width: 100%;
+  margin: 10px 0px;
+  padding-left: 10px;
+  font-size: 14px;
+  background-color: rgb(8, 11, 14);
+  border: none;
+  border-bottom: 1px solid rgb(24, 173, 24);
+  color: aquamarine;
+}
+
+.form button {
+  width: 100%;
+  border: none;
+  padding: 15px;
+  background-color: rgb(24, 173, 24);
+  color: antiquewhite;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.desc {
+  color: antiquewhite;
+  font-size: 22px;
+}
+
+/* for small screen */
+@media (max-width: 767px) {
+  .contact {
+    flex-direction: column;
+    background-color: #fff;
   }
+
+  .c-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  input {
+    width: 70%;
+  }
+}
+
+/* Footer page */
+.footer {
+  text-align: center;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  height: auto;
+  /* padding: 8px; */
+  position: relative;
+}
+
+.footer h4 {
+  color: var(--text-color);
+  padding: 30px;
+}
+
+.f-line {
+  position: absolute;
+  width: 25px;
+  height: 100%;
+  background-color: var(--bg-green);
 }
