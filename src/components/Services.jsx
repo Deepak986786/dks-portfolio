@@ -9,13 +9,13 @@ const Services = () => {
         <p>I am great at</p>
         <h3>Services I provide </h3>
 
-        <Divider/>
+        <Divider />
 
         <div className="service-main">
           <div className="row">
             <div className="card">
               <div className="icon">
-                <DatabaseOutlined   style={{fontSize: '32px'}}/>
+                <DatabaseOutlined style={{ fontSize: "32px" }} />
               </div>
               <div className="card-body">
                 <h3>Web development</h3>
@@ -28,7 +28,7 @@ const Services = () => {
 
             <div className="card">
               <div className="icon">
-                <DatabaseOutlined  style={{fontSize: '32px'}}/>
+                <DatabaseOutlined style={{ fontSize: "32px" }} />
               </div>
               <div className="card-body">
                 <h3>Web Apps</h3>
@@ -41,7 +41,7 @@ const Services = () => {
 
             <div className="card">
               <div className="icon">
-                <DatabaseOutlined  style={{fontSize: '32px'}}/>
+                <DatabaseOutlined style={{ fontSize: "32px" }} />
               </div>
               <div className="card-body">
                 <h3>Backend Services</h3>
@@ -56,7 +56,7 @@ const Services = () => {
           <div className="row">
             <div className="card">
               <div className="icon">
-                <DatabaseOutlined  style={{fontSize: '32px'}}/>
+                <DatabaseOutlined style={{ fontSize: "32px" }} />
               </div>
               <div className="card-body">
                 <h3>API Development</h3>
@@ -69,7 +69,7 @@ const Services = () => {
 
             <div className="card">
               <div className="icon">
-                <DatabaseOutlined  style={{fontSize: '32px'}}/>
+                <DatabaseOutlined style={{ fontSize: "32px" }} />
               </div>
               <div className="card-body">
                 <h3>Database Applications</h3>
@@ -82,7 +82,7 @@ const Services = () => {
 
             <div className="card">
               <div className="icon">
-                <DatabaseOutlined  style={{fontSize: '32px'}}/>
+                <DatabaseOutlined style={{ fontSize: "32px" }} />
               </div>
               <div className="card-body">
                 <h3>Web Design</h3>
