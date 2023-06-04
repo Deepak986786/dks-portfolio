@@ -22,7 +22,7 @@
 .name {
   color: transparent;
   font-size: 50px;
-  background-image: linear-gradient(60deg,white , rgb(19 ,221,46));
+  background-image: linear-gradient(60deg, white, rgb(19, 221, 46));
   background-clip: text;
 }
 
@@ -78,17 +78,17 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   justify-content: flex-end;
 }
 
 .i-bg {
-  background-color:var(--bg-green);
-    clip-path: polygon(30% 0, 100% 0, 100% 100%, 29% 100%, 0 43%);
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
+  background-color: var(--bg-green);
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 29% 100%, 0 43%);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
 .i-img {
@@ -108,41 +108,40 @@
     /* padding: 50px; */
     width: 100%;
     padding-right: 10%;
-    background-image: url('./images/img1.png');
+    background-image: url("./images/img1.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--bg-color);
     /* filter: blur(1px); */
   }
-  .title{
+  .title {
     font-size: 20px;
     z-index: 999;
   }
-  .title-item{
-      height: 30px;
-      font-size: 20px;
-      border-right: 2px solid orange;
-      margin-bottom: 10px;
+  .title-item {
+    height: 30px;
+    font-size: 20px;
+    border-right: 2px solid orange;
+    margin-bottom: 10px;
   }
-  .intro{
+  .intro {
     font-size: smaller;
     margin-top: 15px;
     margin-bottom: 5px;
   }
-  .name{
+  .name {
     font-size: 30px;
   }
- .right{
+  .right {
     display: hidden;
- }
- .i-img{
-     opacity: 0;
- }
- .description{
-  font-size: 12px;
- }
-
+  }
+  .i-img {
+    opacity: 0;
+  }
+  .description {
+    font-size: 12px;
+  }
 }
 
 /*  ABout Page  */
@@ -202,6 +201,11 @@
 @media (max-width: 768px) {
   .grid-item {
     width: 100px;
+  }
+
+  .skills h2 {
+    font-size: 2rem;
+    font-weight: normal;
   }
 }
 
@@ -316,6 +320,16 @@
 @media (max-width: 768px) {
   .card {
     width: 80%;
+  }
+
+  .services h3 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 0px;
+  }
+  .card-body h3 {
+    font-size: 20px;
+    font-weight: 600;
   }
 }
 
