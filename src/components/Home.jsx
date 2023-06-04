@@ -13,7 +13,7 @@ const Home = () => {
               <div className="title-item">Full Stack Web Developer</div>
             </div>
           </div>
-          <div className="desc">
+          <div className="description">
             A self-motivated IT professional with good knowledge and proficiency
             in creating high-quality, scalable, predictable, and
             high-performance web applications.
