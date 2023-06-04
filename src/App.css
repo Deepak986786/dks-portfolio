@@ -112,19 +112,23 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: var(--bg-green);
-    filter: blur(10px);
+    background-color: var(--bg-color);
+    /* filter: blur(1px); */
   }
   .title{
     font-size: 20px;
+    z-index: 999;
   }
   .title-item{
       height: 30px;
       font-size: 20px;
       border-right: 2px solid orange;
+      margin-bottom: 10px;
   }
   .intro{
     font-size: smaller;
+    margin-top: 15px;
+    margin-bottom: 5px;
   }
   .name{
     font-size: 30px;
