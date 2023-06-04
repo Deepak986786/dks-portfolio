@@ -1,6 +1,6 @@
-import { Card } from "antd";
 import React from "react";
 import { DatabaseOutlined } from "@ant-design/icons";
+import { Divider } from "antd";
 
 const Services = () => {
   return (
@@ -8,6 +8,8 @@ const Services = () => {
       <div className="services">
         <p>I am great at</p>
         <h3>Services I provide </h3>
+
+        <Divider/>
 
         <div className="service-main">
           <div className="row">
