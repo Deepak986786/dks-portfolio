@@ -8,50 +8,51 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import Services from "./components/Services";
+import Education from "./components/Education";
+import Experiance from "./components/Experiance";
 
 function App() {
   return (
     <>
-    <div >
-      <Anchor
-      className="app-navbar"
-        affix={true}
-        direction="horizontal"
-        items={[
-          {
-            key: "1",
-            href: "#home",
-            title: <p>Home</p>,
-          },
-          {
-            key: "2",
-            href: "#about",
-            title: <p>About</p>,
-          },
-          {
-            key: "3",
-            href: "#skills",
-            title: <p>Skills</p>,
-          },
-          {
-            key: "6",
-            href: "#services",
-            title: <p>Services</p>,
-          },
-          {
-            key: "4",
-            href: "#projects",
-            title: <p>Projects</p>,
-          },
-          {
-            key: "5",
-            href: "#contact",
-            title: <p>Contact Me</p>,
-          },
-        ]}
-      />
-     </div>
-
+      <div>
+        <Anchor
+          className="app-navbar"
+          affix={true}
+          direction="horizontal"
+          items={[
+            {
+              key: "1",
+              href: "#home",
+              title: <p>Home</p>,
+            },
+            {
+              key: "2",
+              href: "#about",
+              title: <p>About</p>,
+            },
+            {
+              key: "3",
+              href: "#skills",
+              title: <p>Skills</p>,
+            },
+            {
+              key: "6",
+              href: "#services",
+              title: <p>Services</p>,
+            },
+            {
+              key: "4",
+              href: "#projects",
+              title: <p>Projects</p>,
+            },
+            {
+              key: "5",
+              href: "#contact",
+              title: <p>Contact Me</p>,
+            },
+          ]}
+        />
+      </div>
 
       <div id="home">
         <Home />
@@ -59,6 +60,10 @@ function App() {
 
       <div id="about">
         <About />
+      </div>
+      <div className="edu-ex">
+        <Experiance />
+        <Education />
       </div>
       <div id="skills">
         <Skills />
