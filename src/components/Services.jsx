@@ -1,6 +1,5 @@
 import React from "react";
 import { DatabaseOutlined } from "@ant-design/icons";
-import { Divider } from "antd";
 
 const Services = () => {
   return (
@@ -9,7 +8,12 @@ const Services = () => {
         <p>I am great at</p>
         <h3>Services I provide </h3>
 
-        <Divider />
+        <hr style={{
+          color:'white',
+          width:'100%',
+          border:'1px solid white',
+          marginTop:'30px'
+        }} />
 
         <div className="service-main">
           <div className="row">

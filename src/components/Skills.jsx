@@ -1,4 +1,4 @@
-import { Divider } from "antd";
+
 import React from "react";
 
 const Skills = () => {
@@ -6,9 +6,13 @@ const Skills = () => {
     <>
       <div className="skills">
         <h2>Technical Skills</h2>
-        <Divider style={{
-          color: '#fff',
-        }} />
+        <hr
+          style={{
+            color: "white",
+            width: "100%",
+            marginTop: "20px",
+          }}
+        />
 
         <div className="s-skills">
           <div className="grid-item">
@@ -69,7 +73,6 @@ const Skills = () => {
             />
             <h3 className="s-c">React JS</h3>
           </div>
-          
 
           <div className="grid-item">
             <img
@@ -78,7 +81,6 @@ const Skills = () => {
             />
             <h3 className="s-c">Next.Js</h3>
           </div>
-
 
           <div className="grid-item">
             <img
