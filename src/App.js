@@ -1,4 +1,5 @@
 import "./App.css";
+import { React } from "react";
 import Footer from "./components/Footer";
 import { Anchor } from "antd";
 import Home from "./components/Home";
@@ -11,7 +12,10 @@ import Services from "./components/Services";
 function App() {
   return (
     <>
+    <div >
       <Anchor
+      className="app-navbar"
+        affix={true}
         direction="horizontal"
         items={[
           {
@@ -32,7 +36,7 @@ function App() {
           {
             key: "6",
             href: "#services",
-            title:<p>Services</p>
+            title: <p>Services</p>,
           },
           {
             key: "4",
@@ -46,6 +50,8 @@ function App() {
           },
         ]}
       />
+     </div>
+
 
       <div id="home">
         <Home />
@@ -59,7 +65,7 @@ function App() {
       </div>
 
       <div id="services">
-        <Services/>
+        <Services />
       </div>
 
       <div id="projects">
