@@ -8,10 +8,14 @@ body {
   justify-content: center;
   z-index: 999;
   background: var(--bg-green);
-  color: antiquewhite;
+  color: var(--text-color);
   position: static;
   width: 100%;
-  height: 44px;
+  height: 60px;
+}
+.ant-anchor-link-title p {
+  font-size: 20px;
+  color: var(--bg-color);
 }
 
 /*  Home Page  */
@@ -31,14 +35,14 @@ body {
   padding-top: 15%;
   padding-bottom: 10%;
   padding-right: 5%;
-  color: antiquewhite;
+  color: var(--text-color);
   overflow: hidden;
 }
 
 .name {
   color: transparent;
   font-size: 50px;
-  background-image: linear-gradient(60deg, white, rgb(19, 221, 46));
+  background-image: linear-gradient(60deg, #202e44, rgb(19, 221, 46));
   background-clip: text;
 }
 
@@ -84,7 +88,7 @@ body {
 
 .description {
   font-size: 20px;
-  color: antiquewhite;
+  color: var(--text-color);
 }
 
 .right {
@@ -116,6 +120,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .ant-anchor-link-title p {
+    font-size: 16px;
+  }
   .home-div {
     flex-direction: column;
   }
@@ -207,7 +214,7 @@ body {
   font-size: 35px;
   font-weight: 400;
   text-align: center;
-  color: antiquewhite;
+  color: var(--text-color);
   margin-top: 15%;
   margin-bottom: 4%;
 }
@@ -230,7 +237,7 @@ table tr td:nth-child(2) {
 }
 
 table tr td:last-child {
-  color: antiquewhite;
+  color: var(--text-color);
 }
 
 .about-icons {
@@ -241,7 +248,7 @@ table tr td:last-child {
   align-items: center;
   justify-content: space-evenly;
   /* background-color: red; */
-  color: antiquewhite;
+  color: var(--text-color);
 }
 
 @media (max-width: 768px) {
@@ -287,7 +294,7 @@ table tr td:last-child {
 
 .ant-timeline-item-tail {
   width: 0.1em;
-  background-color: white;
+  background-color: var(--bg-green);
 }
 
 .ant-timeline-item-head .ant-timeline-item-head-blue {
@@ -309,11 +316,12 @@ table tr td:last-child {
     /* padding: 10%; */
   }
 
-  .ant-timeline .ant-timeline-item{
+  .ant-timeline .ant-timeline-item {
     width: 100%;
   }
 
-  .experiance h1,.education h1{
+  .experiance h1,
+  .education h1 {
     font-size: 26px;
   }
 }
@@ -336,7 +344,7 @@ table tr td:last-child {
 .education h1 {
   font-size: 35px;
   font-weight: 400;
-  color: antiquewhite;
+  color: var(--text-color);
   margin-bottom: 40px;
 }
 
@@ -368,7 +376,7 @@ table tr td:last-child {
 .skills h2 {
   margin-top: 30px;
   font-size: 2rem;
-  color: antiquewhite;
+  color: var(--text-color);
 }
 
 .s-skills {
@@ -403,7 +411,7 @@ table tr td:last-child {
 }
 
 .s-c {
-  color: rgb(19, 226, 43);
+  color: var(--text-color);
   font-size: 15px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
@@ -424,7 +432,7 @@ table tr td:last-child {
 .services {
   width: 100%;
   background: var(--bg-color);
-  color: antiquewhite;
+  color: var(--text-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -481,7 +489,7 @@ table tr td:last-child {
 .card:hover {
   /* box-shadow: 0px 0px 5px 5px #e6e6e6; */
   background-color: var(--bg-green);
-  color: var(--text-white);
+  color:white;
 }
 
 .card:hover .icon {
@@ -494,6 +502,14 @@ table tr td:last-child {
 .card:hover .card-body {
   transition: 0.8s ease;
   transform: translateY(-30px);
+  color:white;
+}
+
+.card:hover .card-body h3{
+  color: var(--text-white);
+}
+.card:hover .card-body p{
+  color: var(--bg-color);
 }
 .icon {
   width: 70px;
@@ -519,7 +535,7 @@ table tr td:last-child {
 }
 
 .card-body p {
-  color: black;
+  color: var(--text-color);
   text-align: center;
   /* background-color: yellow; */
   margin-top: 10px;
@@ -530,6 +546,7 @@ table tr td:last-child {
 @media (max-width: 768px) {
   .card {
     width: 80%;
+    color: var(--bg-color);
   }
 
   .services h3 {
@@ -561,11 +578,11 @@ table tr td:last-child {
 .c-title {
   font-size: 40px;
   margin: 10px;
-  color: rgb(24, 173, 24);
+  color: var(--bg-green);
 }
 
 .c-title p {
-  color: antiquewhite;
+  color: var(--text-color);
   font-size: 20px;
   margin: 10px;
 }
@@ -577,7 +594,7 @@ table tr td:last-child {
 }
 
 .c-icon p {
-  color: silver;
+  color: var(--text-color);
   margin-left: 10px;
   margin-top: 10px;
 }
@@ -616,8 +633,8 @@ img {
   margin: 10px 0px;
   padding-left: 10px;
   font-size: 14px;
-  background-color: rgb(8, 11, 14);
-  color: aquamarine;
+  background-color: transparent;
+  color: var(--text-color);
 }
 
 .form textarea {
@@ -625,24 +642,24 @@ img {
   margin: 10px 0px;
   padding-left: 10px;
   font-size: 14px;
-  background-color: rgb(8, 11, 14);
+  background-color: transparent;
   border: none;
   border-bottom: 1px solid rgb(24, 173, 24);
-  color: aquamarine;
+  color: var(--text-color);
 }
 
 .form button {
   width: 100%;
   border: none;
   padding: 15px;
-  background-color: rgb(24, 173, 24);
-  color: antiquewhite;
+  background-color: var(--bg-green);
+  color: var(--text-color);
   font-weight: 500;
   cursor: pointer;
 }
 
 .desc {
-  color: antiquewhite;
+  color: var(--text-color);
   font-size: 22px;
 }
 
@@ -663,6 +680,48 @@ img {
   input {
     width: 70%;
   }
+}
+
+/* Project Details */
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+}
+.projects p {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.projects h3 {
+  font-size: 35px;
+  font-weight: 400;
+}
+.projects-container {
+  background: violet;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.project-card {
+  background: indigo;
+  width: 30%;
+  height: 25%;
+}
+.project-card img {
+  width: 100%;
+  height: 100%;
+}
+.project-details {
+}
+.project-details h3 {
+  font-size: 20px;
+}
+.project-details p {
 }
 
 /* Footer page */

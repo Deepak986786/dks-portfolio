@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Mrs+Saint+Delafield&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Mrs+Saint+Delafield&display=swap");
 /* @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Mrs+Saint+Delafield&display=swap'); */
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 
 body {
   margin: 0;
@@ -24,9 +23,26 @@ code {
 }
 
 :root {
-  --bg-color: rgb(8, 11, 24);
+  /* initial color */
+  /* --bg-color: rgb(8, 11, 24);
   --bg-green: rgb(19, 221, 46);
-  --text-color:rgb(122, 128, 134);
+  --text-color:rgb(122, 128, 134); */
+
+  /* experimental color  1*/
+
+  /* --bg-color:#7CB342;
+  --bg-green:#009688;
+  --text-color:#689f38; */
+
+  /* experimental color  2*/
+  /* --bg-color: #9c27b0;
+  --bg-green: #ff9800;
+  --text-color: #f44336; */
+
+  /* experiment color 3 */
+  --bg-color: #e6e2db;
+  --bg-green: #665f3b;
+  --text-color: #a9815d;
 }
 
 /* .footer{
