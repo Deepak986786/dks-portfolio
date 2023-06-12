@@ -121,7 +121,7 @@ body {
 
 @media (max-width: 768px) {
   .ant-anchor-link-title p {
-    font-size: 16px;
+    font-size: 12px;
   }
   .home-div {
     flex-direction: column;
