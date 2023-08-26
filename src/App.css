@@ -489,7 +489,7 @@ table tr td:last-child {
 .card:hover {
   /* box-shadow: 0px 0px 5px 5px #e6e6e6; */
   background-color: var(--bg-green);
-  color:white;
+  color: white;
 }
 
 .card:hover .icon {
@@ -502,13 +502,13 @@ table tr td:last-child {
 .card:hover .card-body {
   transition: 0.8s ease;
   transform: translateY(-30px);
-  color:white;
+  color: white;
 }
 
-.card:hover .card-body h3{
+.card:hover .card-body h3 {
   color: var(--text-white);
 }
-.card:hover .card-body p{
+.card:hover .card-body p {
   color: var(--bg-color);
 }
 .icon {
@@ -744,4 +744,15 @@ img {
   width: 25px;
   height: 100%;
   background-color: var(--bg-green);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
 }

@@ -1,10 +1,27 @@
-import React from "react";
+import React , { useEffect, useRef} from "react";
 import { DatabaseOutlined } from "@ant-design/icons";
 
 const Services = () => {
+  useEffect(()=>{
+       const Observer= new IntersectionObserver((entries)=>{
+        entries.forEach((entry)=>{
+          if(entry.isIntersecting){
+            entry.target.classList.add('active');
+            }else{
+              entry.target.classList.remove("active");
+            }
+        });
+       }, {threshold : 0.5});
+
+       Observer.observe(sectionRef.current);
+
+       return ()=> Observer.disconnect();
+
+  },[])
+  const sectionRef=useRef(null);
   return (
     <>
-      <div className="services">
+      <div className="services fade-in"  ref={sectionRef}>
         <p>I am great at</p>
         <h3>Services I provide </h3>
 
